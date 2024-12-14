@@ -46,7 +46,7 @@ def create_model():
 model = create_model()
 
 # 3️⃣ 모델 학습
-model.fit(X_train, y_train, validation_data=(X_val, y_val), epochs=10, batch_size=32)
+model.fit(X_train, y_train, validation_data=(X_val, y_val), epochs=1000, batch_size=32)
 
 # 4️⃣ 모델 저장
 model.save("motor_control_model.h5")
